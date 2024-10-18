@@ -1,4 +1,3 @@
-/* Glowing effect for the leaderboard title */
 .leaderboard-title {
   font-size: 2.5rem;
   color: white;
@@ -18,84 +17,44 @@
   }
 }
 
-/* Styling for leaderboard container */
 .leaderboard-container {
   width: 100%;
   max-width: 700px;
-  /* Extended the width of the leaderboard */
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
-  /* Removed the background color */
   background-color: transparent;
 }
 
-/* Make the leaderboard title sticky */
 .leaderboard-title {
   position: sticky;
   top: 0;
   background-color: transparent;
-  /* No background color */
   z-index: 10;
   padding: 10px 0;
 }
 
-/* Scrolling area for the teams */
-.leaderboard {
-  max-height: 400px;
-  overflow-y: auto;
-  /* Ensure scrolling */
-  padding: 10px;
-  height: 50rem;
-  /* Equivalent to Tailwind's h-64 (16rem = 256px) */
-  overflow-y: scroll;
-  /* Enables vertical scrolling */
-  border: 1px solid #d1d5db;
-  /* Equivalent to Tailwind's border-gray-300 */
-  padding: 1rem;
-  /* Equivalent to Tailwind's p-4 */
-
-}
-
-/* Hide scrollbar */
 .leaderboard::-webkit-scrollbar {
-  display: none;
+  display: flex;
 }
 
-.leaderboard {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-/* Team container styling */
 .leaderboard>div {
   display: flex;
   justify-content: space-between;
   background-color: #222;
   color: white;
   padding: 15px;
-  /* Increased padding for bigger boxes */
   margin-bottom: 5px;
   border-radius: 5px;
   width: 100%;
 }
 
-/* Team icon styling */
-.team-icon {
-  font-size: 2rem;
-  margin-right: 20px;
-}
-
-/* Team info styling */
 .team-info {
   flex-grow: 1;
 }
 
 .team-name {
   font-size: 1.5rem;
-  /* Increased font size */
 }
 
 .team-score {
@@ -103,9 +62,7 @@
   color: #bbb;
 }
 
-/* Team rank styling */
 .team-rank {
   font-size: 1.5rem;
-  /* Increased font size */
   font-weight: bold;
 }
