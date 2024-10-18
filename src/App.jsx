@@ -5,14 +5,16 @@ import Bg from './bg'
 
 function App() {
   return (
-    <div className='bg-black  '>
-      {/* <Leaderboard /> */}
+    <div>
+    <div className='bg-black overflow-y-auto'>
       <Bg />
-
+    </div>
+    <Leaderboard />
     </div>
   );
 }
 
 export default App;
+
 
 
