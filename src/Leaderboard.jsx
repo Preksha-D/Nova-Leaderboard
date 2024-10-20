@@ -22,13 +22,18 @@ const Leaderboard = () => {
             <h2 className="leaderboard-title">Leaderboard</h2>
             <div className="leaderboard">
                 {teams.map((team) => (
-                    <div key={team.id} className="w-full flex items-center">
+                    <div key={team.id} className="leaderboard-info">
                         {console.log(team.name)}
+                        <div className="team-rank">
+                            <h3>{team.id}</h3> 
+                        </div>
                         <div className="team-info">
                             <h3 className="team-name">{team.name}</h3>
-                            <p className="team-score">Score: {team.score}</p>
                         </div>
-                        <div className="team-rank">#{team.id}</div>
+                        <div className="team-rank">
+                            <h3>{team.score} Pts.</h3>
+                        </div>
+                        
                     </div>
                 ))}
             </div>

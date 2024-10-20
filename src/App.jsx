@@ -1,6 +1,6 @@
 import React from 'react';
 import Leaderboard from './leaderboard';
-import Bg from './bg'
+import Bg from './Bg';
 
 
 function App() {

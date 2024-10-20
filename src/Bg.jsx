@@ -79,7 +79,7 @@ const Bg = () => {
           style={{ top: star.top, left: star.left }}
         ></div>
       ))}
-      <Leaderboard />
+      {/* <Leaderboard /> */}
     </div>
   );
 };
